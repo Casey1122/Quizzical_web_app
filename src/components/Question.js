@@ -30,6 +30,7 @@ export default function Question(props) {
 					const { answerID, text, selected } = item;
 					return (
 						<button
+							key={answerID}
 							className={`answer-btn ${selected ? "answer-selected" : ""}`}
 							onClick={() => toggleSelected(answerID, questionID, selected)}
 						>

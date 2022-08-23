@@ -96,6 +96,7 @@ export default function QuizPage() {
 		const { questionID, question, answers } = questionData;
 		return (
 			<Question
+				key={questionID}
 				questionID={questionID}
 				question={question}
 				answers={answers}
